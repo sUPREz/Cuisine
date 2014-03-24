@@ -1,0 +1,168 @@
+.ui-autocomplete {
+    background-color: #fff;
+    position: absolute;
+    list-style: none;
+    margin: 25px 0 0;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Calibri, Arial;
+    text-align: left;
+}
+
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+
+.ui-autocomplete .ui-menu-item {
+    padding: 0;
+    margin: 0;
+}
+
+
+.ui-autocomplete  .ui-menu-item a {
+    display: block;
+    padding: 4px 6px;
+    margin: 0;
+    text-decoration: none;
+    line-height: 12px;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #fff;
+    color: #777777;
+
+}
+
+.ui-autocomplete .ui-menu-item a.ui-state-hover,
+.ui-autocomplete .ui-menu-item a.ui-state-focus,
+.ui-autocomplete .ui-menu-item a.ui-state-active {
+    background-color: #AAAAAA;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+/*
+.ui-autocomplete-loading {
+    background: white url(ui-anim_basic_16x16.gif) right center no-repeat;
+}
+//*/
+
+ul.tagit {
+    cursor: text;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #555555;
+    background: #fff;
+    text-align: center;
+}
+
+ul.tagit li.ui-menu-item {
+    display: list-item;
+    float: left;
+    clear: left;
+    width: 97%;
+    margin: 2px 2px 2px 2px;
+    position: relative;
+}
+
+/*
+ul.tagit.ui-sortable li.tagit-choice a.ui-icon.ui-icon-grip-dotted-vertical{
+    float: left;
+    width: 12px;
+    margin-left: -5px;
+    cursor: move;
+}
+//*/
+
+ul.tagit li.tagit-choice {
+    display: inline-block;
+    /*float: left;*/
+    margin: 2px 2px 2px 2px;
+    position: relative;
+
+    background: #24B8FF;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.1,#66CCFF),color-stop(0.6,#24B8FF),color-stop(0.8, #66CCFF));
+    border: 1px solid #3399FF;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 2px 15px 2px 5px;
+    cursor: default;
+}
+ul.tagit li.tagit-choice a{
+  color:#000;
+  text-decoration: none;
+}
+ul.tagit li.tagit-choice a:hover{
+  color:#FFF;
+  text-decoration: none;
+}
+
+ul.tagit li.tagit-choice.selected {
+    background: #FF6600;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.1,#FF9900),color-stop(0.6,#FF6600),color-stop(0.8, #FF9900));
+    border: 1px solid #FF3300;
+    color: #000;
+}
+
+
+ul.tagit li.tagit-choice:hover {
+    background: #950000;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.1,#CC0000),color-stop(0.6,#950000),color-stop(0.8, #CC0000));
+    border: 1px solid #660000;
+    color: #FFF;
+}
+
+ul.tagit li.tagit-new {
+    padding: 2px 2px 2px 2px;
+    display: block;
+    /*float: left;*/
+    margin: 2px 2px 2px 2px;
+    position: relative;
+    width: 95%;
+}
+
+
+ul.tagit li.tagit-choice input {
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+ul.tagit li.tagit-choice a.tagit-close {
+    color: #111;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 2px 0px 0px 0px;
+    margin: 0px 5px 0px 5px;
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0px;
+    text-shadow: 1px 1px 0 rgba(150, 150, 150, 1);
+}
+
+ul.tagit li.tagit-choice a.tagit-close:hover {
+    color: #FFF;
+}
+
+ul.tagit input[type="text"] {
+    -moz-box-sizing: border-box;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: inherit !important;
+    outline: none;
+}
+/*
+.tagit-hiddenSelect {
+    display:none;
+}
+*/

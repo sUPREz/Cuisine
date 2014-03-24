@@ -1,0 +1,269 @@
+/* Common */
+body{
+  overflow-y: scroll;
+  margin: 0px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+  div.main{
+    width: 1000px;
+    border: 2px solid #82B300;
+    border-top-width: 0px;
+    margin: 0 auto;
+    background-color: #FFF;
+  }
+    div.main div.links{
+      text-align: center;
+      height: 25px;
+      background-color: #82B300;
+    }
+      div.main div.links ul{
+        background: -webkit-gradient(linear,right bottom,right top,from(#7aa700),to(#8dc100)) #8dc100;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+        div.main div.links ul li:hover{
+          background: -webkit-gradient(linear,right bottom,right top,from(#638800),to(#7AA700)) #7AA700;
+        }
+
+        div.main div.links ul li{
+          display: inline-block;
+          /*width: 100px;*/
+          margin-left: 0px;
+          margin-right: 0px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin: 0px -2px 0px -3px;
+          height: 21px;
+          position: relative;
+          top: -5px;
+          padding-top: 9px;
+        }
+          div.main div.links ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 11px;
+          }
+
+    div.main div.header{
+      text-align: center;
+      height: 85px;
+      font-size: 60px;
+      padding-top: 15px;
+    }
+    div.main div.menu{
+      text-align: center;
+      height: 45px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f48e00), to(#f56d00));
+    }
+      div.main div.menu ul{
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+        div.main div.menu ul li:hover,
+        div.main div.menu ul li.selected{
+          /*background: -webkit-gradient(linear, left top, left bottom, from(#ee5a00), to(#ee3204));*/
+          background: -webkit-gradient(linear, left top, left bottom, from(#346487), to(#214056));
+        }
+
+        div.main div.menu ul li{
+          background: -webkit-gradient(linear, left top, left bottom, from(#498ABA), to(#336488));
+          display: inline-block;
+          height: 18px;
+          padding: 15px 20px 12px 20px;
+          margin: 0px -3px 0px -2px;
+        }
+          div.main div.menu ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: none;
+            font-size: 12px;
+            height: 100%;
+          }
+    div.main div.content{
+      border: 1px solid #cacaca;
+      background: #eee;
+      margin: 10px 10px 10px 10px;
+    }
+        div.main div.content div div.title{
+          font-weight: bold;
+          font-size: 20px;
+          font-variant: small-caps;
+          position: absolute;
+          top: -22px;
+          left: 15px;
+          text-decoration: underline;
+        }
+/* All Recettes & Recette */
+      div.main div.content div.left{
+        display: inline-block;
+      }
+        div.main div.content div.left div.tags{
+          position: relative;
+          margin: 20px;
+          margin-top: 30px;
+          padding: 10px;
+          width: 250px;
+          border: 1px solid #cacaca;
+          border-radius: 10px;
+          background: white;
+        }
+
+      div.main div.content div.right{
+        display: inline-block;
+        vertical-align: top;
+        width: 661px;
+      }
+/* All Recettes */
+      div.main div.content div.tags ul.taglist {
+        overflow: hidden;
+        font-size: 14px;
+        padding: 3px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #555555;
+        background: #fff;
+        text-align: center;
+      }
+
+      div.main div.content div.tags ul.taglist li.tag {
+        display: inline-block;
+        margin: 2px 2px 2px 2px;
+        position: relative;
+        background: #24B8FF;
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.1,#66CCFF),color-stop(0.6,#24B8FF),color-stop(0.8, #66CCFF));
+        border: 1px solid #3399FF;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 2px 5px 2px 5px;
+        cursor: default;
+        font-size: 14px;
+      }
+
+      div.main div.content div.tags ul.taglist li.tag a{
+        color:#000;
+        text-decoration: none;
+      }
+      div.main div.content div.tags ul.taglist li.tag a:hover{
+        color:#FFF;
+        text-decoration: none;
+      }
+
+      div.main div.content div.recettes{
+        position: relative;
+        margin: 20px;
+        margin-top: 30px;
+        margin-left: -5px;
+        padding: 10px;
+        border: 1px solid #cacaca;
+        border-radius: 10px;
+        background: white;
+        display: inline-block;
+        width: 624px;
+      }
+        div.main div.content div.recettes a{
+          color: #000;
+          text-decoration: none;
+        }
+        div.main div.content div.recettes a:hover{
+          color: #0064CD;
+          text-decoration: underline;
+        }
+
+        div.main div.content div.recettes div.letter{
+          display: inline-block;
+          vertical-align: top;
+        }
+          div.main div.content div.recettes ul lh{
+            display: block;
+            border: 1px solid #000;
+            height: 20px;
+            width: 20px;
+            padding-left: 10px;
+            padding-bottom: 2px;
+            margin: 25px 0px 10px 5px;
+            border-radius: 7px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f48e00), to(#f56d00));
+            font-weight: bold;
+            color: #FFF;
+          }
+          div.main div.content div.recettes ul li{
+            font-size: 14px;
+          }
+          div.main div.content div.recettes ul li.imageExists{
+            list-style-type: square;
+          }
+/* Recette */
+
+      div.main div.content div.nom{
+        border: 1px solid #000;
+        border-radius: 10px;
+        background: white;
+        margin: 10px auto 0px auto;
+        text-align: center;
+        font-size: 45px;
+        height: 50px;
+        width: 650px;
+        font-variant: small-caps;
+        padding: 10px;
+        padding-top: 0px;
+      }
+      div.main div.content div.nom form{
+        padding-top: 10px;
+      }
+
+      div.main div.content div.image{
+        width: 936px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        background: white;
+        height: 200px;
+        margin: 20px;
+        margin-bottom: 0px;
+      }
+      div.main div.content div.left div.ingredients ul,
+      div.main div.content div.recette ul,
+      div.main div.content div.notes ul{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      div.main div.content div.left div.ingredients{
+        position: relative;
+        margin: 20px;
+        margin-top: 30px;
+        padding: 10px;
+        border: 1px solid #cacaca;
+        border-radius: 10px;
+        background: white;
+        width: 250px;
+      }
+      div.main div.content div.recette,
+      div.main div.content div.notes{
+        position: relative;
+        margin: 30px 20px 20px -5px;
+        padding: 10px;
+        border: 1px solid #cacaca;
+        border-radius: 10px;
+        background: white;
+        /* float: right; */
+        display: inline-block;
+        width: 624px;
+        min-height: 30px;
+      }
+        div.main div.content div.recette li{
+          margin-bottom: 20px;
+        }
+      div.main div.content div.notes{
+        margin-top: 10px;
+      }
