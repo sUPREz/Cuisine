@@ -61,7 +61,9 @@ switch( $_REQUEST['type'] ){
 
     $result = $dbh->query( $query );
 
-    $t = new Textile();
+    //$t = new Textile();
+    $t = new \Netcarver\Textile\Parser();
+
     $retval = $t->TextileThis(htmlentities( stripslashes($_REQUEST[$field]) , ENT_COMPAT, 'UTF-8' ));
     print replaceLinks( $retval );
     break;

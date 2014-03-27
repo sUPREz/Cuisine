@@ -25,7 +25,8 @@
 <body>
 <?php
 require_once( 'php_config/config.php' );
-require_once( 'php_lib/Textile.php' );
+//require_once( 'php_lib/Textile.php' );
+require_once( 'php_lib/php-textile-3.5.5/Parser.php' );
 ?>
 <div class="main">
   <div class="links">

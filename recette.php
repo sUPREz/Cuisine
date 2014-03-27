@@ -34,7 +34,10 @@
   }
   //print_r ($tags);
   //json_encode($tags);
-  $t = new Textile();
+  //$t = new Textile();
+  $t = new \Netcarver\Textile\Parser();
+
+
 
   //*/
   ?>
@@ -112,6 +115,7 @@ $(function() {
       <div class="editable" id="<?php echo $_REQUEST['id'] ?>">
         <?php
         echo $t->TextileThis(stripslashes( html_entity_decode($recette['nom']) ));
+        //echo $parser->textileThis( stripslashes( html_entity_decode($recette['nom']) ) );
         ?>
       </div>
     </div>

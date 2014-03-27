@@ -1,6 +1,6 @@
 <?php
-////ini_set( 'default_charset' , "UTF-8" );
-ini_set( 'default_charset' , "iso-8859-1" );
+ini_set( 'default_charset' , "UTF-8" );
+//ini_set( 'default_charset' , "iso-8859-1" );
 error_reporting(E_ALL ^ E_NOTICE);
 
 $_CONFIG['host'] = '127.0.0.1';
