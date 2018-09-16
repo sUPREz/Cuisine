@@ -199,9 +199,10 @@ p{
           }
           div.main div.content div.recettes ul li{
             font-size: 14px;
+            list-style-type: circle;
           }
           div.main div.content div.recettes ul li.imageExists{
-            list-style-type: square;
+            list-style-type: disc;
           }
 /* Recette */
 

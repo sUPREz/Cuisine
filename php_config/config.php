@@ -9,6 +9,9 @@ $_CONFIG['dsn'] = 'mysql:dbname='.$_CONFIG['db'].';host='.$_CONFIG['host'];
 $_CONFIG['user'] = 'root';
 $_CONFIG['password'] = 'l33t43v3r';
 
+$_CONFIG['PowerUserIP'] = '192.168.0.100';
+$_CONFIG['VisitorIP'] = $_SERVER['REMOTE_ADDR'];
+
 try {
     $dbh = new PDO($_CONFIG['dsn'], $_CONFIG['user'], $_CONFIG['password']);
 } catch(PDOException $e) {

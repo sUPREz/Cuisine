@@ -1,4 +1,22 @@
 <?php
+function IsPowerUser(){
+  global $_CONFIG;
+  //print_r_pre($_CONFIG['VisitorIP']);
+  //print_r_pre($_CONFIG['PowerUserIP']);
+  if( $_CONFIG['VisitorIP'] == $_CONFIG['PowerUserIP'] )
+    return true;
+  else
+    return false;
+}
+function print_r_pre($array){
+  echo '<pre>';
+  if( !empty($array) )
+    print_r($array);
+  else
+    echo "empty_var";
+  echo '</pre>';
+}
+
 function replaceLinks($text){
   //echo $text;
   //$text = 'bla blabla [[Muffins (base)|bb]] bli bli blibli';

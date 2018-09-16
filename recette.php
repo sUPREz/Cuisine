@@ -119,7 +119,13 @@ $(function() {
         ?>
       </div>
     </div>
-    <div class="image" style="background-image: url('<?php if( is_file('imgs_recettes/'.$_REQUEST['id'].'.jpg') ) echo 'imgs_recettes/'.$_REQUEST['id'].'.jpg'; else echo 'imgs_recettes/empty.jpg'; ?>')"></div>
+    <?
+    if( is_file('imgs_recettes/'.$_REQUEST['id'].'.jpg') )
+    {
+      echo '<div class="image" style="background-image: url(imgs_recettes/'.$_REQUEST['id'].'.jpg)"></div>';
+    }
+    ?>
+    
     <div class="left">
       <div class="ingredients">
         <div class="title">Ingr&eacute;dients</div>
